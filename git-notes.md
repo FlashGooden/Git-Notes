@@ -38,6 +38,8 @@ Rebasing
 
 git reset <hash> will reset to the staged commit
 
+`git reset --hard HEAD^ ` hard resets to last commit
+
 git reset --hard will reset and remove the commits from git
 
 git add -p if you want to slowly go through your file changes hunk by hunk
