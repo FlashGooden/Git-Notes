@@ -1,4 +1,4 @@
-# Git 
+# Git
 
 Git has 3 object types: Commit ---- Tree ----- Blob
   Commit contains the Author, Message, and a pointer to a tree of changes
@@ -7,7 +7,7 @@ Git has 3 object types: Commit ---- Tree ----- Blob
 
   The Blob contains data  (Source code, pictures, videos)
 
-  Git add -p for a way to progressively see the file changes you are staging 
+  Git add -p for a way to progressively see the file changes you are staging
 
 # regular git commands
 Rebasing
@@ -18,15 +18,20 @@ Rebasing
 
 `git log --show-signature`
 
+`git log -S 'getSingleGem'`
+
 `git diff --cached` if you want to see the diff with the staged files
 
-` git --no-pager log --oneline -5`  - shows 5 last commits in a log that doesn't open a new window  
+` git --no-pager log --oneline -5`  - shows 5 last commits in a log that doesn't open a new window
 
 `git --no-pager log --graph` - shows a full graph of history and branches with comments
 
 `git commit -a` adds the repo and lets you commit right away
 
 `git push --force-with-lease` - Use when you need to push up to a feature branch, but you don't want to erase the changes someone will be making on their branch.
+
+`git for-each-ref --sort=-committerdate --count=10 --format='%(refname:short)' refs/heads/` - shows the last 10 branches you checked out
+`git rb` shortcut made using the above line in the github alias file
 
 
 
